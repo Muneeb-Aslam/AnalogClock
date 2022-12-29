@@ -4,13 +4,15 @@
   box-sizing: border-box;
   background-color: #091921;
 }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    min-height: 100vh;
+}
 .clock {
-  width: 25%;
-  height: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   border: 5px solid #19475d;
   background: url("clock.png");
@@ -42,16 +44,16 @@
 }
 .clock .hand.hour{
     width: 10px;
-    height: 31%;
+    height: 13%;
     background:#143749;
 }
 .clock .hand.minute{
     width: 8px;
-    height: 32%;
+    height: 14%;
     background:#050d12;
 }
 .clock .hand.seconds{
     width: 6px;
-    height: 33%;
+    height: 15%;
     background:red;
 }
